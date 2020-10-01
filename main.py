@@ -1,30 +1,30 @@
+
 line_list  = []
-infile = open('SILOV.txt', 'r')
-print("Name of file: ", infile.name)
+infile = open('SILOV.txt', encoding='utf-8') 
 Lines = infile.readlines()
-#print(line)
 
 
 def get_file_lines(filename):
     for line in Lines:
         line_list.append(line)
-    print(line_list)
+    return line_list
+        
         
     #for line in :
      #   return line_list
      #   print(line_list)
      #   print("success")
-get_file_lines(infile)
 
-
-
-#def lines_printed_backwards(line_list):
-   # print
+#def lines_printed_backwards(list):
+ #   reverse_list = line_list.reverse()
+  #  print(reverse_list)
+    
 
 #def lines_printed_random()
 
 #def lines_printed_custom()
-
+get_file_lines(infile)
+print(line_list)
 
 #if __name__ == "__main__":
    # lines_printed_backwards(line_list)
